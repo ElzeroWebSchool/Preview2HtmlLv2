@@ -1,0 +1,468 @@
+/* Start Global */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    min-width: 1200px
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+h2, h3, h4 {
+    font-weight: normal
+}
+
+.navbar, 
+.header,
+.services,
+.our-team,
+.testim,
+.our-projects,
+.footer {min-width: 1200px}
+
+/* End Global */
+
+/* Start Navbar */
+
+.navbar {
+    font-size: 18px;
+    height: 0;
+    color: #FFF;
+    position: relative;
+    z-index: 2
+}
+
+.navbar .brand {
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    margin-top: 10px
+}
+
+.navbar .links {
+    float: left;
+    width: 50%;
+    margin-top: 25px
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent
+}
+
+.navbar .links li a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+    color: #1abc9c
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+    border-bottom: 2px solid #1abc9c;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header {
+    background: url('../images/header2.jpg');
+    position: relative
+}
+
+.header .overlay {
+    background-color: rgba(0, 0 ,0 , 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    z-index: 1
+}
+
+.header .bx-wrapper {
+    height: 100%
+}
+
+.header .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center
+}
+
+.header .bxslider {
+    height: 100%
+}
+
+.header .bxslider li {
+    display: block
+}
+
+.header .bxslider li h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold
+}
+
+.header .bxslider li h2 span {
+    color: #1abc9c;
+}
+
+/* End Header */
+
+/* Start Services */
+
+.services {
+    padding: 80px 20px 40px
+}
+
+.services h2 {
+    margin: 0 0 50px;
+    font-weight: normal
+}
+
+.services .item {
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 20px
+}
+
+.services .item i {
+    color: #1abc9c;
+    float: left;
+    width: 17%;
+    margin-top: 10px;
+    margin-right: 8%
+}
+
+.services .item .info {
+    float: left;
+    width: 70%
+}
+
+.services .item .info h3 {
+    color: #585353;
+    margin-bottom: 10px
+}
+
+.services .item .info p {
+    margin-top: 0;
+    color: #888
+}
+
+.our-team {
+    padding: 40px 20px
+}
+
+.our-team .box {
+    float: left
+}
+
+.our-team .box:first-child {
+    width: 35%
+}
+
+.our-team .box p {
+    color: #888;
+    line-height: 1.4;
+    font-size: 14px
+}
+
+.our-team .box:not(:first-child) {
+    width: 15.25%;
+    margin-left: 1%;
+    position: relative;
+}
+
+.our-team .box:not(:first-child) .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 183px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    background-color: rgba(26, 188, 156, .9);
+    display: none;
+}
+
+.our-team .box:not(:first-child):hover .overlay {
+    display: block
+}
+
+.our-team .box:not(:first-child) img {
+    width: 100%
+}
+
+.our-team h2 {
+    padding: 0 0 15px
+}
+
+/* End Services */
+
+/* Start Testimonials */
+
+.testim {
+    background: url('../images/keyboard.jpg');
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 80px 0
+}
+
+.testim .t-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .8)
+}
+
+.testim h2 {
+    font-size: 40px;
+    margin: 80px 0 10px
+}
+
+.testim q {
+    font-size: 20px;
+    line-height: 2;
+    color: #D0D0D0;
+    display: block;
+    margin-top: 60px
+}
+
+.testim p {
+    font-size: 30px;
+    color: #1abc9c
+}
+
+.testim .slider > div {
+    display: none
+}
+
+.testim .slider .active {
+    display: block
+}
+
+/* End Testimoanials */
+
+/* Start Projects */
+
+.our-projects {
+    padding: 60px 0;
+}
+
+.our-projects ul {
+    margin-top: 50px
+}
+
+.our-projects ul li {
+    display: inline-block;
+    border: 2px solid #D4CCCC;
+    color: #A7A7A7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px
+}
+
+.our-projects ul li.selected {
+    background-color: #1abc9c;
+    border: 2px solid #1abc9c;
+    color: #FFF
+}
+
+.our-projects .gallery {
+    margin-top: 50px;
+    overflow: hidden
+}
+
+.our-projects .gallery .row > div:nth-child(2) {
+    margin-right: 1%;
+    margin-left: 1%
+}
+
+.our-projects .gallery .row > div {
+    width: 32.66666%;
+    float: left;
+    margin-bottom: 12px;
+    background-color: #DDD;
+    position: relative
+}
+
+.our-projects .gallery .row > div .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 232px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    background-color: rgba(26, 188, 156, .9);
+    display: none
+}
+
+.our-projects .gallery .row > div .heart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #FFF;
+    display: none
+}
+
+.our-projects .gallery .row > div:hover .over,
+.our-projects .gallery .row > div:hover .heart {
+    display: block
+}
+
+.our-projects .gallery .row > div img {
+    width: 100%
+}
+
+.our-projects .shuffle li {
+    cursor: pointer
+}
+
+.our-projects .mix {
+    display: none
+}
+
+/* End Projects */
+
+/* Start Footer */
+
+.footer {
+    background-color: #232323;
+    color: #6C6C6C;
+    padding: 40px 0;
+    overflow: hidden
+}
+
+.footer .col {
+    width: 25%;
+    float: left
+}
+
+.footer .col h2 {
+    color: #FFF;
+    font-size: 18px
+}
+
+.footer .col p {
+    margin-bottom: 30px;
+    line-height: 1.6
+}
+
+.footer .col i {
+    display: inline-block;
+    color: #979797;
+    border: 1px solid #979797;
+    width: 40px;
+    padding: 10px
+}
+
+.footer .tags span {
+    display: inline-block;
+    color: #CCC;
+    border: 1px solid #979797;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px
+}
+
+.footer .recent div {
+    overflow: hidden;
+    margin-bottom: 15px
+}
+
+.footer .recent div img {
+    float: left;
+    margin-right: 10px
+}
+
+.footer .recent div h4 {
+    margin: 8px 0;
+    color: #CCC;
+}
+
+.footer .blog ul li {
+    padding: 15px;
+    border-bottom: 1px solid #979797;
+    color: #CCC
+}
+
+.footer .copyright {
+    margin-top: 30px
+}
+
+/* End Footer */
+
+/* Start My Framework */
+
+.clearfix {
+    clear: both
+}
+
+.special-heading {
+    position: relative
+}
+
+.special-heading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40px;
+    border-bottom: 2px solid #333;
+}
+
+.separator {
+    border: 1px solid #EEE
+}
+
+/* End My Framework */
+
